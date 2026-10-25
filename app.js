@@ -20,7 +20,7 @@ const upload = multer({
 });
 
 const db_url=process.env.ATLASDB_URL;
-if (!dbUrl) {
+if (!db_url) {
     throw new Error("ATLASDB_URL is missing from environment variables");
 }
 async function main(){
