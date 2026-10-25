@@ -1,0 +1,12 @@
+<% layout("layout/boilerplate") %>
+
+<form action="/admin/add" method="POST" enctype="multipart/form-data" class="newListing">
+    <input name="title" placeholder="Project title" required>
+    <textarea name="description" placeholder="Description" required></textarea>
+    <input type="file" name="image" accept="image/png,image/jpeg">
+    <input name="tags" placeholder="Tags, separated by commas">
+    <input name="demoUrl" placeholder="Live demo URL">
+    <input name="githubUrl" placeholder="GitHub URL">
+
+    <button type="submit">Save project</button>
+</form>

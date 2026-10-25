@@ -1,0 +1,26 @@
+{
+  "name": "myproject",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cloudinary": "^1.41.3",
+    "connect-mongo": "^6.0.0",
+    "dotenv": "^18.0.8",
+    "ejs-mate": "^4.0.0",
+    "express": "^5.3.0",
+    "express-session": "^1.19.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^9.11.2",
+    "multer": "^2.4.0",
+    "multer-storage-cloudinary": "^4.0.0",
+    "nodemon": "^3.1.14"
+  }
+}

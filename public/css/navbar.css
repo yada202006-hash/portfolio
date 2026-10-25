@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+}
+
+.navbar-translucent {
+  --bs-navbar-padding-x: 0;
+  --bs-navbar-padding-y: 0;
+
+  background: #c7b8a6;
+  backdrop-filter: blur(8px);
+
+  width: 100%;
+  border-radius: 0 0 20px 20px; /* Rounded bottom corners */
+  overflow: hidden;
+}
+
+.navbar-translucent > .container-fluid {
+  display: flex;
+  justify-content: space-between; /* Name left, links right */
+  align-items: center;
+
+  width: 100%;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.navbar-translucent .navbar-brand {
+  margin-right: 0;
+  padding: 12px 0;
+}
+
+.navbar-translucent .container-fluid > p {
+  margin: 0;
+  font-size: 28px;
+  /* color: #a6a6a6; */
+  color:#c7b8a6
+}
+
+.navbar-translucent .navbar-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  margin-left: auto; /* Push links to the right */
+}
+
+.navbar-translucent .nav-link {
+  padding: 12px 14px;
+}
+
+/* Remove unwanted spacing around the navbar */
+nav.navbar-translucent {
+  margin: 0;
+}
+
+#app {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.navbar-brand {
+    transition: color 0.2s ease;
+}
+
+.navbar-brand:hover {
+    color: #e0a08f;
+}

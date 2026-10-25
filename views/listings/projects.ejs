@@ -1,0 +1,29 @@
+<% layout("layout/boilerplate") %>
+
+<div class="project-grid">
+    <% projects.forEach(project => { %>
+        <section class="card hero">
+            <img src="<%= project.image %>" class="card-img-top" alt="<%= project.title %>">
+
+            <div class="card-body">
+                <h4 class="card-title"><%= project.title %></h4>
+                <p class="card-text"><%= project.description %></p>
+
+                <div class="project-tags">
+                    <% project.tags.forEach(tag => { %>
+                        <span><%= tag %></span>
+                    <% }) %>
+                </div>
+
+                <div class="project-links">
+                    <% if (project.demoUrl) { %>
+                        <a href="<%= project.demoUrl %>">Live demo</a>
+                    <% } %>
+                    <% if (project.githubUrl) { %>
+                        <a href="<%= project.githubUrl %>">GitHub</a>
+                    <% } %>
+                </div>
+            </div>
+        </section>
+    <% }) %>
+</div>
